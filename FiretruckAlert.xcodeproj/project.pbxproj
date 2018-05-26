@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C170BAAA20B9A7F60000CCBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C170BAA920B9A7F60000CCBE /* AppDelegate.swift */; };
+		C170BAAC20B9A7F60000CCBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C170BAAB20B9A7F60000CCBE /* ViewController.swift */; };
+		C170BAAF20B9A7F60000CCBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C170BAAD20B9A7F60000CCBE /* Main.storyboard */; };
+		C170BAB120B9A7FB0000CCBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C170BAB020B9A7FB0000CCBE /* Assets.xcassets */; };
+		C170BAB420B9A7FB0000CCBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C170BAB220B9A7FB0000CCBE /* LaunchScreen.storyboard */; };
+		C170BABF20B9A7FB0000CCBE /* FiretruckAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C170BABE20B9A7FB0000CCBE /* FiretruckAlertTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C170BABB20B9A7FB0000CCBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C170BA9E20B9A7F60000CCBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C170BAA520B9A7F60000CCBE;
+			remoteInfo = FiretruckAlert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C170BAA620B9A7F60000CCBE /* FiretruckAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiretruckAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C170BAA920B9A7F60000CCBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C170BAAB20B9A7F60000CCBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C170BAAE20B9A7F60000CCBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C170BAB020B9A7FB0000CCBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C170BAB320B9A7FB0000CCBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C170BAB520B9A7FB0000CCBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C170BABA20B9A7FB0000CCBE /* FiretruckAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiretruckAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C170BABE20B9A7FB0000CCBE /* FiretruckAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiretruckAlertTests.swift; sourceTree = "<group>"; };
+		C170BAC020B9A7FB0000CCBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C170BAA320B9A7F60000CCBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C170BAB720B9A7FB0000CCBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C170BA9D20B9A7F60000CCBE = {
+			isa = PBXGroup;
+			children = (
+				C170BAA820B9A7F60000CCBE /* FiretruckAlert */,
+				C170BABD20B9A7FB0000CCBE /* FiretruckAlertTests */,
+				C170BAA720B9A7F60000CCBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C170BAA720B9A7F60000CCBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C170BAA620B9A7F60000CCBE /* FiretruckAlert.app */,
+				C170BABA20B9A7FB0000CCBE /* FiretruckAlertTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C170BAA820B9A7F60000CCBE /* FiretruckAlert */ = {
+			isa = PBXGroup;
+			children = (
+				C170BAA920B9A7F60000CCBE /* AppDelegate.swift */,
+				C170BAAB20B9A7F60000CCBE /* ViewController.swift */,
+				C170BAAD20B9A7F60000CCBE /* Main.storyboard */,
+				C170BAB020B9A7FB0000CCBE /* Assets.xcassets */,
+				C170BAB220B9A7FB0000CCBE /* LaunchScreen.storyboard */,
+				C170BAB520B9A7FB0000CCBE /* Info.plist */,
+			);
+			path = FiretruckAlert;
+			sourceTree = "<group>";
+		};
+		C170BABD20B9A7FB0000CCBE /* FiretruckAlertTests */ = {
+			isa = PBXGroup;
+			children = (
+				C170BABE20B9A7FB0000CCBE /* FiretruckAlertTests.swift */,
+				C170BAC020B9A7FB0000CCBE /* Info.plist */,
+			);
+			path = FiretruckAlertTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C170BAA520B9A7F60000CCBE /* FiretruckAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C170BAC320B9A7FB0000CCBE /* Build configuration list for PBXNativeTarget "FiretruckAlert" */;
+			buildPhases = (
+				C170BAA220B9A7F60000CCBE /* Sources */,
+				C170BAA320B9A7F60000CCBE /* Frameworks */,
+				C170BAA420B9A7F60000CCBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FiretruckAlert;
+			productName = FiretruckAlert;
+			productReference = C170BAA620B9A7F60000CCBE /* FiretruckAlert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C170BAB920B9A7FB0000CCBE /* FiretruckAlertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C170BAC620B9A7FB0000CCBE /* Build configuration list for PBXNativeTarget "FiretruckAlertTests" */;
+			buildPhases = (
+				C170BAB620B9A7FB0000CCBE /* Sources */,
+				C170BAB720B9A7FB0000CCBE /* Frameworks */,
+				C170BAB820B9A7FB0000CCBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C170BABC20B9A7FB0000CCBE /* PBXTargetDependency */,
+			);
+			name = FiretruckAlertTests;
+			productName = FiretruckAlertTests;
+			productReference = C170BABA20B9A7FB0000CCBE /* FiretruckAlertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C170BA9E20B9A7F60000CCBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Ivens Portugal";
+				TargetAttributes = {
+					C170BAA520B9A7F60000CCBE = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					C170BAB920B9A7FB0000CCBE = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = C170BAA520B9A7F60000CCBE;
+					};
+				};
+			};
+			buildConfigurationList = C170BAA120B9A7F60000CCBE /* Build configuration list for PBXProject "FiretruckAlert" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C170BA9D20B9A7F60000CCBE;
+			productRefGroup = C170BAA720B9A7F60000CCBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C170BAA520B9A7F60000CCBE /* FiretruckAlert */,
+				C170BAB920B9A7FB0000CCBE /* FiretruckAlertTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C170BAA420B9A7F60000CCBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C170BAB420B9A7FB0000CCBE /* LaunchScreen.storyboard in Resources */,
+				C170BAB120B9A7FB0000CCBE /* Assets.xcassets in Resources */,
+				C170BAAF20B9A7F60000CCBE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C170BAB820B9A7FB0000CCBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C170BAA220B9A7F60000CCBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C170BAAC20B9A7F60000CCBE /* ViewController.swift in Sources */,
+				C170BAAA20B9A7F60000CCBE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C170BAB620B9A7FB0000CCBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C170BABF20B9A7FB0000CCBE /* FiretruckAlertTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C170BABC20B9A7FB0000CCBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C170BAA520B9A7F60000CCBE /* FiretruckAlert */;
+			targetProxy = C170BABB20B9A7FB0000CCBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C170BAAD20B9A7F60000CCBE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C170BAAE20B9A7F60000CCBE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C170BAB220B9A7FB0000CCBE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C170BAB320B9A7FB0000CCBE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C170BAC120B9A7FB0000CCBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C170BAC220B9A7FB0000CCBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C170BAC420B9A7FB0000CCBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FiretruckAlert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivens.FiretruckAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C170BAC520B9A7FB0000CCBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FiretruckAlert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivens.FiretruckAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C170BAC720B9A7FB0000CCBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FiretruckAlertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivens.FiretruckAlertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FiretruckAlert.app/FiretruckAlert";
+			};
+			name = Debug;
+		};
+		C170BAC820B9A7FB0000CCBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FiretruckAlertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ivens.FiretruckAlertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FiretruckAlert.app/FiretruckAlert";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C170BAA120B9A7F60000CCBE /* Build configuration list for PBXProject "FiretruckAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C170BAC120B9A7FB0000CCBE /* Debug */,
+				C170BAC220B9A7FB0000CCBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C170BAC320B9A7FB0000CCBE /* Build configuration list for PBXNativeTarget "FiretruckAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C170BAC420B9A7FB0000CCBE /* Debug */,
+				C170BAC520B9A7FB0000CCBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C170BAC620B9A7FB0000CCBE /* Build configuration list for PBXNativeTarget "FiretruckAlertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C170BAC720B9A7FB0000CCBE /* Debug */,
+				C170BAC820B9A7FB0000CCBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C170BA9E20B9A7F60000CCBE /* Project object */;
+}
