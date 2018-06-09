@@ -13,8 +13,8 @@ class RegularCarViewController: UIViewController, CLLocationManagerDelegate {
     
     // MARK: - Properties
     let locationManager = CLLocationManager()
-    
-    let URL_WEB_SERVER = "http://192.168.56.101:8000/api/cars/createCar"
+    let URL_WEB_SERVER = "http://192.168.56.101:8000/api/cars/updateRegularCar"
+    var carID: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,7 +82,7 @@ class RegularCarViewController: UIViewController, CLLocationManagerDelegate {
         request.httpMethod = "POST"
         
         // set the POST parameters
-        let postParameters = "street="+street
+        let postParameters = "street="+street + "id="+carID
         
         
         // set parameters to body

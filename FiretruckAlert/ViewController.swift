@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     
     // MARK: - Properties
     @IBOutlet weak var carNameTextField: UITextField!
-    let URL_WEB_SERVER = "http://192.168.56.101:8000/api/cars/createCar"
+    let URL_WEB_SERVER = "http://192.168.56.101:8000/api/cars/name"
+    var carID: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +68,7 @@ class ViewController: UIViewController {
         request.httpMethod = "POST"
         
         // set the POST parameters
-        let postParameters = "carName="+carName
+        let postParameters = "name="+carName
         
         
         // set parameters to body
@@ -91,13 +92,16 @@ class ViewController: UIViewController {
                 // parse the JSON
                 if let parseJSON = myJSON {
                     
-                    var response: String!
-                    response = parseJSON["carName"] as! String?
+                    var carType: String!
+                    carType = parseJSON["carType"] as! String?
                     
-                    if response == "regular" {
+                    self.carID = parseJSON["carID"] as! String?
+                    
+                    
+                    if carType == "regular" {
                         self.performSegue(withIdentifier: "toRegularCarViewController", sender: self)
                     }
-                    else if response == "emergency" {
+                    else if carType == "emergency" {
                         self.performSegue(withIdentifier: "toEmergencyCarViewController", sender: self)
                     }
                     
@@ -110,6 +114,16 @@ class ViewController: UIViewController {
         
         // execute the task
         task.resume()
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let destinationViewController = segue.destination as? RegularCarViewController {
+            destinationViewController.carID = self.carID
+        } else if let destinationViewController = segue.destination as? EmergencyCarViewController {
+            destinationViewController.carID = self.carID
+        }
     }
 }
 

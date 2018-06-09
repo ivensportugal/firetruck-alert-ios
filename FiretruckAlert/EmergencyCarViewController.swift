@@ -16,8 +16,9 @@ class EmergencyCarViewController: UIViewController, CLLocationManagerDelegate, M
     @IBOutlet weak var mapView: MKMapView!
     var destinationPlacemark: MKPlacemark?
     var route: MKRoute?
+    var carID: String = ""
     
-    let URL_WEB_SERVER = "http://192.168.56.101:8000/api/cars/createCar"
+    let URL_WEB_SERVER = "http://192.168.56.101:8000/api/cars/notifyCars"
 
     override func viewDidLoad() {
         super.viewDidLoad()
