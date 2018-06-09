@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C109DC4720CC3315007231BB /* RegularCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C109DC4620CC3315007231BB /* RegularCarViewController.swift */; };
+		C109DC4920CC3325007231BB /* EmergencyCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C109DC4820CC3325007231BB /* EmergencyCarViewController.swift */; };
 		C170BAAA20B9A7F60000CCBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C170BAA920B9A7F60000CCBE /* AppDelegate.swift */; };
 		C170BAAC20B9A7F60000CCBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C170BAAB20B9A7F60000CCBE /* ViewController.swift */; };
 		C170BAAF20B9A7F60000CCBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C170BAAD20B9A7F60000CCBE /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C109DC4620CC3315007231BB /* RegularCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularCarViewController.swift; sourceTree = "<group>"; };
+		C109DC4820CC3325007231BB /* EmergencyCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyCarViewController.swift; sourceTree = "<group>"; };
 		C170BAA620B9A7F60000CCBE /* FiretruckAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiretruckAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C170BAA920B9A7F60000CCBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C170BAAB20B9A7F60000CCBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 			children = (
 				C170BAA920B9A7F60000CCBE /* AppDelegate.swift */,
 				C170BAAB20B9A7F60000CCBE /* ViewController.swift */,
+				C109DC4620CC3315007231BB /* RegularCarViewController.swift */,
+				C109DC4820CC3325007231BB /* EmergencyCarViewController.swift */,
 				C170BAAD20B9A7F60000CCBE /* Main.storyboard */,
 				C170BAB020B9A7FB0000CCBE /* Assets.xcassets */,
 				C170BAB220B9A7FB0000CCBE /* LaunchScreen.storyboard */,
@@ -202,7 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C109DC4720CC3315007231BB /* RegularCarViewController.swift in Sources */,
 				C170BAAC20B9A7F60000CCBE /* ViewController.swift in Sources */,
+				C109DC4920CC3325007231BB /* EmergencyCarViewController.swift in Sources */,
 				C170BAAA20B9A7F60000CCBE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,7 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ivens.FiretruckAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -389,7 +397,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ivens.FiretruckAlert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
