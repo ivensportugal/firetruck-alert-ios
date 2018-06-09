@@ -33,13 +33,7 @@ class ViewController: UIViewController {
         
         // get values from textField
         if let carName = carNameTextField.text {
-            if carName == "a" {
-                
-            }
-            
-            if carName == "b" {
-                performSegue(withIdentifier: "toEmergencyCarViewController", sender: self)
-            }
+            sendCarNameToServer(carName: carName)
         }
         self.carNameTextField.text = ""
     }
@@ -52,6 +46,69 @@ class ViewController: UIViewController {
     
     @IBAction func unwindFromEmergencyCarVC(_ segue: UIStoryboardSegue) {
         
+    }
+    
+    
+    
+    
+    
+    //MARK: Private methods
+    // Sends data to the webserver
+    func sendCarNameToServer(carName: String) {
+        
+        // create NSURL
+        let requestURL = URL(string: URL_WEB_SERVER)
+        
+        // create NSMutableURLRequest
+        var request = URLRequest(url: requestURL!)
+        
+        // set the method to POST
+        request.httpMethod = "POST"
+        
+        // set the POST parameters
+        let postParameters = "carName="+carName
+        
+        
+        // set parameters to body
+        request.httpBody = postParameters.data(using: String.Encoding.utf8)
+        
+        // create a task to send POST requests
+        let task = URLSession.shared.dataTask(with: request) {
+            data, response, error in
+            
+            if error != nil {
+                print("error is \(error ?? "could not read the error" as! Error)")
+                return
+            }
+            
+            // parse the response
+            do {
+                
+                // convert response to NSDictionary
+                let myJSON = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
+                
+                // parse the JSON
+                if let parseJSON = myJSON {
+                    
+                    var response: String!
+                    response = parseJSON["carName"] as! String?
+                    
+                    if response == "regular" {
+                        self.performSegue(withIdentifier: "toRegularCarViewController", sender: self)
+                    }
+                    else if response == "emergency" {
+                        self.performSegue(withIdentifier: "toEmergencyCarViewController", sender: self)
+                    }
+                    
+                }
+            } catch {
+                print(error)
+            }
+            
+        }
+        
+        // execute the task
+        task.resume()
     }
 }
 

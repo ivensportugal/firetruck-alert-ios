@@ -96,35 +96,6 @@ class RegularCarViewController: UIViewController, CLLocationManagerDelegate {
                 print("error is \(error ?? "could not read the error" as! Error)")
                 return
             }
-            
-             // parse the response
-             do {
-             
-                 // convert response to NSDictionary
-                 let myJSON = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
-                
-                 // parse the JSON
-                 if let parseJSON = myJSON {
-                 
-                    var response: String!
-                    response = parseJSON["car_type"] as! String?
-                    
-                    if response == "regular" {
-                        self.performSegue(withIdentifier: "toRegularCarViewController", sender: self)
-                    }
-                    else if response == "emergency" {
-                        self.performSegue(withIdentifier: "toEmergencyCarViewController", sender: self)
-                    }
-                 
-                 /*
-                 // add response to textfield
-                 DispatchQueue.main.async {
-                 self.responseTextField.text = response
-                 }*/
-                 }
-             } catch {
-             print(error)
-             }
 
         }
         
