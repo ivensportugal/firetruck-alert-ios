@@ -33,7 +33,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="send"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvV-96-LO5">
-                                <rect key="frame" x="169" y="196" width="36" height="30"/>
+                                <rect key="frame" x="83" y="196" width="208" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send"/>
                                 <connections>
@@ -46,7 +46,6 @@
                     </view>
                     <connections>
                         <outlet property="carNameTextField" destination="Poj-l3-d4z" id="Uis-Ur-txW"/>
-                        <outlet property="sendButton" destination="gvV-96-LO5" id="17i-gR-qpF"/>
                         <segue destination="kYO-U7-X7O" kind="presentation" identifier="toRegularCarViewController" modalTransitionStyle="flipHorizontal" id="XU1-it-hZ7"/>
                         <segue destination="cZ1-0Q-g6h" kind="presentation" identifier="toEmergencyCarViewController" modalTransitionStyle="flipHorizontal" id="AG6-L3-Yl7"/>
                     </connections>
@@ -107,8 +106,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MSh-cJ-PBd">
-                                <rect key="frame" x="16" y="20" width="343" height="490"/>
+                                <rect key="frame" x="16" y="20" width="343" height="409"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="86X-gB-sNu" appends="YES" id="IGq-di-1mG"/>
+                                </connections>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSo-3M-Jsi">
                                 <rect key="frame" x="16" y="617" width="343" height="30"/>
@@ -124,10 +127,22 @@
                                 <rect key="frame" x="16" y="579" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Confirm route"/>
+                                <connections>
+                                    <action selector="confirmRoute:" destination="cZ1-0Q-g6h" eventType="touchUpInside" id="Srw-sK-1J9"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Indicate on the map where your final destination is. Then, confirm the route." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLx-0x-lt7">
-                                <rect key="frame" x="16" y="518" width="343" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdh-iS-ZF3">
+                                <rect key="frame" x="16" y="541" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Route"/>
+                                <connections>
+                                    <action selector="calculateRoute:" destination="cZ1-0Q-g6h" eventType="touchUpInside" id="dcy-TY-DBh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLx-0x-lt7">
+                                <rect key="frame" x="16" y="437" width="343" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Indicate on the map where your final destination is. Then, select Route, to view the best route to the destination. After that, confirm the route.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -136,9 +151,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zIU-AN-hal"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="MSh-cJ-PBd" id="3gg-SH-Ra1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kWY-zx-ddP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="nmh-8b-59t" userLabel="Exit" sceneMemberID="exit"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="86X-gB-sNu"/>
             </objects>
             <point key="canvasLocation" x="872.79999999999995" y="615.74212893553226"/>
         </scene>

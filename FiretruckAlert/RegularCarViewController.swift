@@ -129,26 +129,7 @@ class RegularCarViewController: UIViewController, CLLocationManagerDelegate {
         // execute the task
         task.resume()
     }
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+ 
     
 
 }

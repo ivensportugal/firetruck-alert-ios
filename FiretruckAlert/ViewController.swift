@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     
     // MARK: - Properties
     @IBOutlet weak var carNameTextField: UITextField!
-    @IBOutlet weak var sendButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
