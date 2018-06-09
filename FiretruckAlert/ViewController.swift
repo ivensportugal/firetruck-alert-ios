@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     // MARK: - Properties
     @IBOutlet weak var carNameTextField: UITextField!
+    let URL_WEB_SERVER = "http://192.168.56.101:8000/api/cars/createCar"
     
     override func viewDidLoad() {
         super.viewDidLoad()
