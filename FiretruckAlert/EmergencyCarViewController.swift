@@ -35,6 +35,9 @@ class EmergencyCarViewController: UIViewController, CLLocationManagerDelegate, M
         mapView.showsUserLocation = true
         let userRegion: MKCoordinateRegion = MKCoordinateRegion(center: mapView.userLocation.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
         mapView.setRegion(userRegion, animated: true)
+        
+        locationManager.delegate = self
+        mapView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -147,6 +150,7 @@ class EmergencyCarViewController: UIViewController, CLLocationManagerDelegate, M
         }
         
         // Send street names to server
+        sendStreetNamesToServer(streetNames: Array(addressSet))
         
     }
     

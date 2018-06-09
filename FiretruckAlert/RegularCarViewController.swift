@@ -31,6 +31,8 @@ class RegularCarViewController: UIViewController, CLLocationManagerDelegate {
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
         }
+        
+        locationManager.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
