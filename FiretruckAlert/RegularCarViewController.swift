@@ -12,7 +12,7 @@ import MapKit
 class RegularCarViewController: UIViewController, CLLocationManagerDelegate {
     
     // MARK: - Properties
-    let locationManager = CLLocationManager()
+    var locationManager: CLLocationManager!;
     let URL_WEB_SERVER = "http://192.168.56.101:8000/api/cars/updateRegularCar"
     var carID: String = ""
 
@@ -45,7 +45,6 @@ class RegularCarViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         // Captures coordination points
         if let location: CLLocation = manager.location {
-            print("locations = \(location.coordinate.latitude) \(location.coordinate.longitude)")
             
             // Converts location to road name.
             lookUpCurrentLocation(location: manager.location!, completionHandler: sendPostDataToServer)
@@ -78,17 +77,19 @@ class RegularCarViewController: UIViewController, CLLocationManagerDelegate {
         // create NSMutableURLRequest
         var request = URLRequest(url: requestURL!)
         
-        // set the method to POST
-        request.httpMethod = "POST"
+        // set the method to PUT
+        request.httpMethod = "PUT"
         
-        // set the POST parameters
-        let postParameters = "street="+street + "id="+carID
+        // set the PUT parameters
+        let putParameters = "id="+self.carID + "&street="+street
+        print("parameters: \(putParameters)")
         
         
         // set parameters to body
-        request.httpBody = postParameters.data(using: String.Encoding.utf8)
+        request.httpBody = putParameters.data(using: String.Encoding.utf8)
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         
-        // create a task to send POST requests
+        // create a task to send PUT requests
         let task = URLSession.shared.dataTask(with: request) {
             data, response, error in
             

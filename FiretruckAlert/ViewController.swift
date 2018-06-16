@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 
 class ViewController: UIViewController {
@@ -15,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var carNameTextField: UITextField!
     let URL_WEB_SERVER = "http://192.168.56.101:8000/api/cars/name"
     var carID: String!
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,14 +97,15 @@ class ViewController: UIViewController {
                     var carType: String!
                     carType = parseJSON["carType"] as! String?
                     
-                    self.carID = parseJSON["carID"] as! String?
+                    let id: Int = parseJSON["id"] as! Int
+                    self.carID = String(id)
                     
                     
                     if carType == "regular" {
-                        self.performSegue(withIdentifier: "toRegularCarViewController", sender: self)
+                        DispatchQueue.main.async {self.performSegue(withIdentifier: "toRegularCarViewController", sender: self)}
                     }
                     else if carType == "emergency" {
-                        self.performSegue(withIdentifier: "toEmergencyCarViewController", sender: self)
+                        DispatchQueue.main.async {self.performSegue(withIdentifier: "toEmergencyCarViewController", sender: self)}
                     }
                     
                 }
@@ -121,8 +124,10 @@ class ViewController: UIViewController {
         
         if let destinationViewController = segue.destination as? RegularCarViewController {
             destinationViewController.carID = self.carID
+            destinationViewController.locationManager = self.locationManager
         } else if let destinationViewController = segue.destination as? EmergencyCarViewController {
             destinationViewController.carID = self.carID
+            destinationViewController.locationManager = self.locationManager
         }
     }
 }

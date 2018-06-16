@@ -12,7 +12,7 @@ import MapKit
 class EmergencyCarViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     // MARK: - Properties
-    let locationManager = CLLocationManager()
+    var locationManager: CLLocationManager!
     @IBOutlet weak var mapView: MKMapView!
     var destinationPlacemark: MKPlacemark?
     var route: MKRoute?
@@ -98,6 +98,7 @@ class EmergencyCarViewController: UIViewController, CLLocationManagerDelegate, M
         
         // set parameters to body
         request.httpBody = postParameters.data(using: String.Encoding.utf8)
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         
         // create a task to send POST requests
         let task = URLSession.shared.dataTask(with: request) {
